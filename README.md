@@ -13,7 +13,7 @@ Clone the repository to where you'd like (in the example I use the home folder ~
     
     
     cd ~
-    git clone https://github.com/billyprice1/cloud9-vnc.git
+    git clone https://github.com/kcirtaptrick/cloud9-vnc.git
     
 
 Enter the repository sub-directory
@@ -27,8 +27,15 @@ Now make sure apt-get has been updated with
 Run the install script with privileges
 
     sudo ./install.sh
-    
-Clean up installation directory
+
+If you get the error: 
+    sudo: ./install.sh: command not found
+run:
+    Sudo chmod a+x install.sh    
+then try again
+
+
+(Optional) Clean up installation directory
     
     rm -rf ./
 
@@ -49,14 +56,10 @@ Use the custom C9 runner
     
 Run the start script symlinked into your /usr/local/bin
     
-    
     c9vnc
-    
-    Usage: c9vnc <args>
-       -h          Print this message
-       -f          Run in the foreground
-       -k          Kill running daemon
-    No arguments will try to start daemon process
-    
-    
-    This Project Is no longer worked on
+
+If you get the error: 
+    sudo: /opt/c9vnc/c9vnc.sh: command not found
+run:
+    Sudo chmod a+x /opt/c9vnc/c9vnc.sh   
+then try again
