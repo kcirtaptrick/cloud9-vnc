@@ -29,8 +29,10 @@ Run the install script with privileges
     sudo ./install.sh
 
 If you get the error: 
+
     sudo: ./install.sh: command not found
 run:
+
     Sudo chmod a+x install.sh    
 then try again
 
@@ -59,7 +61,9 @@ Run the start script symlinked into your /usr/local/bin
     c9vnc
 
 If you get the error: 
+
     sudo: /opt/c9vnc/c9vnc.sh: command not found
 run:
+
     Sudo chmod a+x /opt/c9vnc/c9vnc.sh   
 then try again
